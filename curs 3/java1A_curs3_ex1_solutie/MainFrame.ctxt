@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=MainFrame
+comment1.params=
+comment1.target=MainFrame()
+comment10.params=me
+comment10.target=void\ mouseReleased(java.awt.event.MouseEvent)
+comment11.params=
+comment11.target=java.lang.String\ toString()
+comment12.params=me
+comment12.target=void\ mouseClicked(java.awt.event.MouseEvent)
+comment2.params=x1\ y1\ x2\ y2
+comment2.target=int\ getDistance(int,\ int,\ int,\ int)
+comment3.params=x\ y
+comment3.target=Cerc\ adaugaCerc(int,\ int)
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment5.params=
+comment5.target=void\ initComponents()
+comment6.params=g
+comment6.target=void\ paintComponent(java.awt.Graphics)
+comment7.params=ev
+comment7.target=void\ mouseMoved(java.awt.event.MouseEvent)
+comment8.params=me
+comment8.target=void\ mouseDragged(java.awt.event.MouseEvent)
+comment9.params=me
+comment9.target=void\ mousePressed(java.awt.event.MouseEvent)
+numComments=13

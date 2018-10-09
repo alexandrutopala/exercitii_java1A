@@ -1,0 +1,22 @@
+1. In pachetul "geom", scrie clasa "Punct", care are: 
+	- atributele: "x" si "y", de tip int (coordonatele spatiale ale punctului this)
+	- un constructor care primeste ca parametri x-ul si y-ul punctului, in aceasta ordine
+	- un comportament "getDistance" care primeste ca parametru un Punct si care returneaza distanta euclidiana dintre punctul this si punctul
+	  primit ca parametru sub forma de int
+
+2. In pachetul "geom", scrie clasa "Cerc", care are:
+	- atributele: "centru" de tip Punct si "raza" de tip int
+	- un constructor care primeste care parametri centrul si raza cercului (in aceasta ordine)
+
+3. Scrie secventele de cod cerute de TODO-urile din fisierul: 
+	- MainFrame.java, la liniile: 
+		-> 4
+		-> 31		
+
+Observatii : 
+	- pentru a calcula radicalul unui numar x, foloseste metoda "Math.sqrt(x);"
+	- cerintele trebuie completate in ordinea in care au fost date
+        - denumirile claselor, metodelor si variabilelor precizate in cerinta trebuie respectate intocmai
+	- pentru a testa aplicatia, ruleaza clasa Main
+	- pentru a vedea numerotarea liniilor, din editorul de cod, selecteaza Options->Preferences->Display Line Numbers
+	

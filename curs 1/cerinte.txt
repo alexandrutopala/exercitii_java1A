@@ -1,0 +1,13 @@
+Scrie secventele de cod cerute de TODO-urile din fisierele: 
+	- Utils.java, la liniile: 
+		-> 8
+		-> 17
+		-> 26
+		-> 36
+		-> 46
+
+Observatii : 
+	- cerintele se pot completa in orice ordine si sunt independente una de cealalta
+	- pentru a testa aplicatia, ruleaza clasa Main
+	- pentru a vedea numerotarea liniilor, din editorul de cod, selecteaza Options->Preferences->Display Line Numbers
+	

@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=MainFrame
+comment1.params=
+comment1.target=MainFrame()
+comment2.params=nume\ varsta
+comment2.target=Persoana\ createPersoana(java.lang.String,\ int)
+comment3.params=
+comment3.target=void\ initComponents()
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment5.params=ev
+comment5.target=void\ mouseClicked(java.awt.event.MouseEvent)
+numComments=6
