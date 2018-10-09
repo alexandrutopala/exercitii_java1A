@@ -1,0 +1,12 @@
+1. Scrie clasa "Persoana" care are doua atribute: "nume" de tip String si "varsta" de tip int, si un constructor care primeste ca parametri numele si varsta, in aceasta ordine.
+
+2. Scrie secventele de cod cerute de TODO-urile din fisierul: 
+	- MainFrame.java, la liniile: 
+		-> 29
+
+Observatii : 
+	- cerintele trebuie completate in ordinea in care au fost date
+        - denumirile claselor, metodelor si variabilelor precizate in cerinta trebuie respectate intocmai
+	- pentru a testa aplicatia, ruleaza clasa Main
+	- pentru a vedea numerotarea liniilor, din editorul de cod, selecteaza Options->Preferences->Display Line Numbers
+	
