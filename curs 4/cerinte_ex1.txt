@@ -1,0 +1,27 @@
+1. Scrie secventele de cod cerute de TODO-urile din fisierul: 
+	- Animal.java, la liniile: 
+		-> 2
+		-> 14
+
+2. Creeaza clasa "AnimalAcvatic", care sa mosteneasca clasa "Animal"	
+
+3. Creeaza clasa finala "Utils", care are: 
+	- constructorul private
+	- o metoda statica "copy(Animal[])", care primeste ca parametru un array de "Animal" si returneaza o copie a array-ului primit. 
+	  Obs. : nu se vor crea si copii ale instantelor din array
+
+4. Scrie secventele de cod cerute de TODO-urile din fisierul: 
+	- Zoo.java, la liniile: 
+		-> 45
+		-> 50
+		-> 55
+		-> 74
+		-> 78
+	
+Observatii : 
+	- pentru fiecare membru de clasa creat, se va alege modificatorul de acces potrivit
+	- cerintele trebuie completate in ordinea in care au fost date
+        - denumirile claselor, metodelor si variabilelor precizate in cerinta trebuie respectate intocmai
+	- pentru a testa aplicatia, ruleaza clasa Main
+	- pentru a vedea numerotarea liniilor, din editorul de cod, selecteaza Options->Preferences->Display Line Numbers
+	

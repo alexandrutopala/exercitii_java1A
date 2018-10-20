@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Subject
+comment1.params=l
+comment1.target=void\ addListener(Listener)
+comment2.params=l
+comment2.target=void\ removeListener(Listener)
+comment3.params=
+comment3.target=void\ notifyListeners()
+comment4.params=
+comment4.target=void\ notifyWindowClosed()
+numComments=5

@@ -1,0 +1,17 @@
+1. Scrie secventele de cod cerute de TODO-urile din fisierul: 
+	- Animal.java, la liniile: 
+		-> 48
+	- AnimalTerestru.java, la liniile:
+		-> 17
+	-AnimalAcvatic.java, la liniile:
+		->6
+	- Zoo.java, la liniile: 
+		-> 2
+		-> 20
+	
+Observatii : 
+	- pentru fiecare membru de clasa creat, se va alege modificatorul de acces potrivit
+        - denumirile claselor, metodelor si variabilelor precizate in cerinta trebuie respectate intocmai
+	- pentru a testa aplicatia, ruleaza clasa Main
+	- pentru a vedea numerotarea liniilor, din editorul de cod, selecteaza Options->Preferences->Display Line Numbers
+	

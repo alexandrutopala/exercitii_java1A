@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Animal
+comment0.text=\r\n\ \ TODO\:\ incapsuleaza\ clasa\ Animal\ \r\n
+comment1.params=nume\ varsta\ greutate
+comment1.target=Animal(java.lang.String,\ int,\ int)
+comment2.params=
+comment2.target=int\ getId()
+comment3.params=
+comment3.target=java.lang.String\ getNume()
+comment4.params=nume
+comment4.target=void\ setNume(java.lang.String)
+comment5.params=
+comment5.target=int\ getVarsta()
+comment6.params=varsta
+comment6.target=void\ setVarsta(int)
+comment7.params=
+comment7.target=int\ getGreutate()
+comment8.params=greutate
+comment8.target=void\ setGreutate(int)
+comment9.params=
+comment9.target=java.lang.String\ toString()
+numComments=10

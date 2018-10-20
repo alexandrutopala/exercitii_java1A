@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=AnimalTerestru
+comment1.params=nume\ varsta\ greutate\ regiune
+comment1.target=AnimalTerestru(java.lang.String,\ int,\ int,\ java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getRegiune()
+comment3.params=regiune
+comment3.target=void\ setRegiune(java.lang.String)
+comment4.params=
+comment4.target=java.lang.Object\ clone()
+numComments=5

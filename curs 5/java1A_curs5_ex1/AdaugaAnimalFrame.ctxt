@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=AdaugaAnimalFrame
+comment1.params=zoo\ subject\ height\ x\ y
+comment1.target=AdaugaAnimalFrame(Zoo,\ Subject,\ int,\ int,\ int)
+comment2.params=we
+comment2.target=void\ windowClosing(java.awt.event.WindowEvent)
+comment3.params=
+comment3.target=void\ adaugaAnimal()
+comment4.params=
+comment4.target=void\ initComponents()
+numComments=5

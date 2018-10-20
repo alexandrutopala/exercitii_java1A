@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=AnimalAcvatic
+comment1.params=nume\ varsta\ greutate
+comment1.target=AnimalAcvatic(java.lang.String,\ int,\ int)
+numComments=2
