@@ -2,11 +2,12 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.*;
+import exceptii.*;
 
 public class MainFrame extends JFrame implements Listener {    
     private DefaultListModel<Animal> model;
     private Subject subject;
-    private Zoo zoo = new Zoo();
+    private Zoo zoo = Zoo.getInstance();
     private final String[] cmds = {
         "toate animalele",
         "cu greutatea intre",
@@ -18,10 +19,20 @@ public class MainFrame extends JFrame implements Listener {
     private String prevItem;
     
     {
-        zoo.adaugaAnimal(new AnimalAcvatic("Nemo", 3, 2));
-        zoo.adaugaAnimal(new AnimalAcvatic("Dory", 4, 4));
-        zoo.adaugaAnimal(new AnimalAcvatic("Croco", 2, 40));
-        zoo.adaugaAnimal(new AnimalTerestru("Leo", 8, 120, "Africa de Sud"));
+        // TODO: trateaza exceptiile checked aruncate mai jos folosind un singur bloc try-catch 
+        //       care sa cuprinda toate cele 4 instructiuni de mai jos.
+        //       In cazul aruncarii vreunei exceptii, afiseaza mesajul acesteia utilizatorului
+        //       intr-o componenta grafica (nu in consola).
+        // HINT: pentru a afisa un mesaj intr-o componenta grafica, foloseste metoda statica 
+        //       "afiseazaMesaj(String mesaj)" din clasa Utils
+        try {
+            zoo.adaugaAnimal(new AnimalAcvatic("Nemo", 3, 2));
+            zoo.adaugaAnimal(new AnimalAcvatic("Dory", 4, 4));
+            zoo.adaugaAnimal(new AnimalAcvatic("Croco", 2, 40));
+            zoo.adaugaAnimal(new AnimalTerestru("Leo", 8, 120, "Africa de Sud"));
+        } catch (NumeDuplicatException e) {
+            Utils.afiseazaMesaj(e.getMessage());
+        }
     }
     
     public MainFrame() {
@@ -116,7 +127,17 @@ public class MainFrame extends JFrame implements Listener {
                 
                 final Animal selected = list.getSelectedValue();
                 model.removeElement(selected);
-                zoo.stergeAnimal(selected.getId());
+                // TODO: trateaza exceptiile checked aruncate mai jos folosind blocul try-catch
+                //       In cazul aruncarii vreunei exceptii, afiseaza mesajul acesteia utilizatorului
+                //       intr-o componenta grafica (nu in consola).
+                // HINT: pentru a afisa un mesaj intr-o componenta grafica, foloseste metoda statica 
+                //       "afiseazaMesaj(String mesaj)" din clasa Utils
+                try {
+                    zoo.stergeAnimal(selected.getId());
+                } catch (IdInexistentException e) {
+                    Utils.afiseazaMesaj(e.getMessage());
+                }
+                
             }
         });
         
@@ -132,13 +153,9 @@ public class MainFrame extends JFrame implements Listener {
         jsp.setPreferredSize(new Dimension(430, 350));
         listPanel.add(jsp);
         
-        // TODO: inlocuieste clasa anonima de mai jos cu o expresie lambda
-        adaugaButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent ev) { 
-                new AdaugaAnimalFrame(zoo, subject, getHeight(), getX() + getWidth() + 2, getY()).setVisible(true);
-                adaugaButton.setEnabled(false);
-            }
+        adaugaButton.addActionListener(ev -> { 
+            new AdaugaAnimalFrame(zoo, subject, getHeight(), getX() + getWidth() + 2, getY()).setVisible(true);
+            adaugaButton.setEnabled(false);
         });
         
         setLayout(new BorderLayout());
@@ -176,27 +193,23 @@ public class MainFrame extends JFrame implements Listener {
         panel.add(jtf2);
         JButton jb1 = new JButton("Cauta");
         
-        // TODO: inlocuieste clasa anonima de mai jos cu o expresie lambda
-        jb1.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent ev) {
-                int min; 
-                int max; 
-                try {
-                    min = Integer.parseInt(jtf1.getText());                
-                } catch (NumberFormatException e) {
-                    min = 0;
-                    jtf1.setText(""); 
-                }
-                
-                try {
-                    max = Integer.parseInt(jtf2.getText());           
-                } catch (NumberFormatException e) {
-                    max = Integer.MAX_VALUE;
-                    jtf2.setText(""); 
-                }
-                refresh(zoo.findAnimaleByGreutate(min, max));
+        jb1.addActionListener(ev -> {
+            int min; 
+            int max; 
+            try {
+                min = Integer.parseInt(jtf1.getText());                
+            } catch (NumberFormatException e) {
+                min = 0;
+                jtf1.setText(""); 
             }
+            
+            try {
+                max = Integer.parseInt(jtf2.getText());           
+            } catch (NumberFormatException e) {
+                max = Integer.MAX_VALUE;
+                jtf2.setText(""); 
+            }
+            refresh(zoo.findAnimaleByGreutate(min, max));
         });
         panel.add(jb1);
         
@@ -215,28 +228,23 @@ public class MainFrame extends JFrame implements Listener {
         JTextField jtf4 = new JTextField(""); jtf4.setColumns(3);
         panel.add(jtf4);
         JButton jb3 = new JButton("Cauta");
-        
-        // TODO: inlocuieste clasa anonima de mai jos cu o expresie lambda
-        jb3.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent ev) {
-                int min; 
-                int max; 
-                try {
-                    min = Integer.parseInt(jtf3.getText());                
-                } catch (NumberFormatException e) {
-                    min = 0;
-                    jtf3.setText(""); 
-                }
-                
-                try {
-                    max = Integer.parseInt(jtf4.getText());           
-                } catch (NumberFormatException e) {
-                    max = Integer.MAX_VALUE;
-                    jtf4.setText(""); 
-                }
-                refresh(zoo.findAnimaleByVarsta(min, max));
+        jb3.addActionListener(ev -> {
+            int min; 
+            int max; 
+            try {
+                min = Integer.parseInt(jtf3.getText());                
+            } catch (NumberFormatException e) {
+                min = 0;
+                jtf3.setText(""); 
             }
+            
+            try {
+                max = Integer.parseInt(jtf4.getText());           
+            } catch (NumberFormatException e) {
+                max = Integer.MAX_VALUE;
+                jtf4.setText(""); 
+            }
+            refresh(zoo.findAnimaleByVarsta(min, max));
         });
         panel.add(jb3);
         
@@ -251,17 +259,12 @@ public class MainFrame extends JFrame implements Listener {
         JTextField jtf5 = new JTextField(""); jtf5.setColumns(10);
         panel.add(jtf5);
         JButton jb4 = new JButton("Cauta");
-        
-        // TODO: inlocuieste clasa anonima de mai jos cu o expresie lambda
-        jb4.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent ev) {
-                try {
-                    refresh(zoo.findAnimaleByNume(jtf5.getText()));
-                } catch (NumberFormatException e) {
-                    JOptionPane.showMessageDialog(null, "Numarul introdus este invalid");
-                    jtf1.setText(""); jtf2.setText("");
-                }
+        jb4.addActionListener(ev -> {
+            try {
+                refresh(zoo.findAnimaleByNume(jtf5.getText()));
+            } catch (NumberFormatException e) {
+                JOptionPane.showMessageDialog(null, "Numarul introdus este invalid");
+                jtf1.setText(""); jtf2.setText("");
             }
         });
         panel.add(jb4);

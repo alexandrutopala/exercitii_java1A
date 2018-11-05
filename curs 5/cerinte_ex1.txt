@@ -3,11 +3,16 @@
 		-> 48
 	- AnimalTerestru.java, la liniile:
 		-> 17
-	-AnimalAcvatic.java, la liniile:
+	- AnimalAcvatic.java, la liniile:
 		->6
 	- Zoo.java, la liniile: 
 		-> 2
 		-> 20
+	- MainFrame.java, la liniile:
+		-> 135
+		-> 179
+		-> 219
+		-> 255
 	
 Observatii : 
 	- pentru fiecare membru de clasa creat, se va alege modificatorul de acces potrivit
@@ -15,3 +20,7 @@ Observatii :
 	- pentru a testa aplicatia, ruleaza clasa Main
 	- pentru a vedea numerotarea liniilor, din editorul de cod, selecteaza Options->Preferences->Display Line Numbers
 	
+De observat :
+	- numarul liniilor de cod din fisierul MainFrame.java inainte de a inlocui clasele anonime cu expresii lambda si 
+	dupa efectuarea acestei inlocuiri. 
+	Concluzia: prin folosirea expresiilor lambda se reduce semnificativ numarul liniilor de cod 

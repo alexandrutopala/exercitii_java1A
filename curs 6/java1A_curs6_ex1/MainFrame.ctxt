@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=MainFrame
+comment1.params=
+comment1.target=MainFrame()
+comment2.params=animale
+comment2.target=void\ refresh(Animal[])
+comment3.params=
+comment3.target=void\ notifyList()
+comment4.params=
+comment4.target=void\ notifyWindowClosed()
+comment5.params=
+comment5.target=void\ initComponents()
+comment6.params=ev
+comment6.target=void\ mouseClicked(java.awt.event.MouseEvent)
+comment7.params=
+comment7.target=void\ initPanels()
+numComments=8

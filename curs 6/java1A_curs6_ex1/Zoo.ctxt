@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Zoo
+comment1.params=
+comment1.target=Zoo()
+comment10.params=
+comment10.target=Animal[]\ findAnimaleAcvatice()
+comment2.params=
+comment2.target=Zoo\ getInstance()
+comment3.params=a
+comment3.target=boolean\ adaugaAnimal(Animal)
+comment4.params=id
+comment4.target=Animal\ stergeAnimal(int)
+comment5.params=
+comment5.target=Animal[]\ getAnimale()
+comment6.params=minVarsta\ maxVarsta
+comment6.target=Animal[]\ findAnimaleByVarsta(int,\ int)
+comment7.params=minGreutate\ maxGreutate
+comment7.target=Animal[]\ findAnimaleByGreutate(int,\ int)
+comment8.params=nume
+comment8.target=Animal[]\ findAnimaleByNume(java.lang.String)
+comment9.params=
+comment9.target=Animal[]\ findAnimaleTerestre()
+numComments=11

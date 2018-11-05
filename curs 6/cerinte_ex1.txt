@@ -1,0 +1,31 @@
+1. Creeaza pachetul "exceptii" in pachetul default al aplicatiei
+2. In pachetul "exceptii", creeaza urmatoarele exceptii:
+	- NumeDuplicatException, exceptie de tip checked, cu mesajul : "Un animal cu acelasi nume exista deja in adapost"
+	- IdInexistentException, exceptie de tip checked, cu mesajul : "Nu exista niciun animal in acest adapost cu id-il specificat"
+3. Scrie secventele de cod cerute de TODO-urile din fisierul: 
+	- Zoo.java, la liniile : 
+		-> 19
+		-> 23
+		-> 31
+		-> 60
+	- MainFrame.java, la liniile : 
+		-> 21
+		-> 125
+	- AdaugaAnimalFrame, la liniile : 
+		-> 37
+
+	
+Observatii : 
+	- se vor realiza importurile necesare unde este cazul
+	- cerintele trebuie completate in ordinea in care au fost date
+        - denumirile claselor, metodelor si variabilelor precizate in cerinta trebuie respectate intocmai
+	- pentru a testa aplicatia, ruleaza clasa Main
+	- pentru a vedea numerotarea liniilor, din editorul de cod, selecteaza Options->Preferences->Display Line Numbers
+	
+De observat :
+	- luand ca exemplu metoda "adaugaAnimal" din clasa "Zoo" : odata inlocuite instructiunile de "return false" cu aruncarea exceptiilor create, 
+	problema care poate aparea in interiorul metodei este mult mai specific semnalata celui care a apelat aceasta metoda si astfel poate fi 
+	mai precis tratata de catre apelant. 
+	  Returnarea valorii false (valoarea care spunea ca a aparut o problema la adaugarea animalului in adapost) nu spunea prea multe celui care
+	a apelat metoda.
+ 	  
