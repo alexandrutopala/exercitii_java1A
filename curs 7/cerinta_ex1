@@ -1,0 +1,26 @@
+Se cere realizarea unei aplicatii care gestioneaza o singura loterie si care are urmatoarele cazuri de utilizare:
+  - joaca: care primeste un set de 6 numere intregi din intervalul [1, 50], genereaza intern un alt set de 6 numere aleatore tot in intervalul [1, 50] si intoarce un punctaj numar intreg calculat dupa REGULA DE JOC (descrisa la final)
+  - afiseaza: care afiseaza utlimul set de numere generat aleator
+
+Prin intermediul consolei, utilizatorul poate da urmatoarele comenzi:
+  - "JOACA <n1> <n2> <n3> <n4> <n5> <n6>" : n1, n2,.., n6 fiind setul de cele 6 numere intregi din intervalul [1, 50] cu care va juca utlizatorul.
+                                            Dupa aceasta comanda, se va afisa "Ai castigat: <punctaj>", unde "<punctaj>" e punctajul calculat pe baza setului de numere dat.
+                                            Pe urmatoarea linie se va afisa setul de numere generate aleator de loterie.
+  - "EXIT" : inchide aplicatia
+
+
+REGULA DE JOC:
+  Se dau doua 2 siruri de cate 6 numere fiecare, aflate in intervalul [1, 50], si se pun cele doua siruri unul sub celalalt.
+  Spre exemplu:
+    n1 n2 n3 n4 n5 n6
+    m1 m2 m3 m4 m5 m6
+  Dupa care, se face diferenta in modul intre numerele aflate unul sub celalalt. Spre exemplu, vom avea diferentele in modul: |n1 - m1|, |n2 - m2|, s.a.m.d.
+  In functie de valoarea fiecarei diferente, vom aduna la un punctaj total o valoare calculata astfel:
+      - daca diferenta e 0: adunam la punctajul total 100
+      - daca diferenta e 1: adunam la punctajul total 50
+      - daca diferenta e 2, 3, sau 4: adunam la punctajul total 25
+      - altfel, nu adaugam nimic
+  Punctajul total astfel obtinut va reprezenta rezultatul jocului.
+
+OBSERVATII:
+  - solutia va fi scrisa in proiectul: java1A_curs7_ex1
